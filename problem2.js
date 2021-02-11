@@ -1,8 +1,12 @@
 
 function findLastCar(inventory){
+    var result =[];
+    if(inventory==undefined||inventory.length===0){
+        return result;
+    }
 
     var lastIndex = (Object.keys(inventory).length) - 1;
-    return "Last car is a "+ inventory[lastIndex].car_make+" "+inventory[lastIndex].car_model;
+    return inventory[lastIndex];
     
 }
 
